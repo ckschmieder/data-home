@@ -1,8 +1,21 @@
-section::after {
-  content:'';
-  display: block;
-  clear: both;
+
+
+html { font-size: 62.5%; } 
+body { font-size: 10px; font-size: 1rem; } /* =14px */
+
+
+#main {
+  box-sizing: border-box;
 }
+#main * {
+  box-sizing: inherit;
+}
+
+div#main-wrap h1, h2, h3 {
+    font-weight: normal;
+}
+ 
+
 .indent {
     padding: 0 5%!important;
 }
@@ -17,14 +30,15 @@ section::after {
   .not-mobile {
     display: block;
   }
-}
+} 
 
 #main-wrap {
   max-width: 960px;
   margin: 0 auto;
+  clear: both;
 }
 
-.text {
+#main-wrap {
   h1 {
     font-size: 1.7rem;
     font-color: #414042;
@@ -46,9 +60,8 @@ section::after {
   }
 }
 
-
 @media screen and (min-width: 600px) {
-  .text {
+  #main-wrap {
     h1 {
       font-size: 1.9rem;
     }
@@ -68,7 +81,7 @@ section::after {
 }
 
 @media screen and (min-width: 720px) {
-  .text {
+  #main-wrap {
     h1 {
       font-size: 2.7rem;
     }
@@ -87,9 +100,8 @@ section::after {
   }
 }
 
-
 @media screen and (min-width: 960px) {
-  .text {
+  #main-wrap  {
     h1 {
       font-size: 2.7rem;
     } 
@@ -155,7 +167,7 @@ section.home-section {
   .text.right {
     float: right;
   }
-}
+} 
 
 section#video {
   // background-image: url('https://www.datamotion.com/wp-content/uploads/2016/06/DM-Tile-2.jpg');
@@ -172,7 +184,7 @@ section#video {
         height: 100%;
       }
     }
-  }
+  } 
 }
 
 section#lock {
@@ -202,7 +214,6 @@ section#logo-success {
     display: none;
   }
 }
-
 
 .video-container {
   width: 100%;
@@ -237,7 +248,7 @@ section#social {
     text-decoration: none;
     visibility: hidden;
   }
-}
+}  
 
 .slick-slide:hover,
 .slick-slide:active {
@@ -249,7 +260,7 @@ section#social {
   p {
     visibility: visible;
   }
-}
+} 
 .blue {
   background-color: #86A6BF;
 }
