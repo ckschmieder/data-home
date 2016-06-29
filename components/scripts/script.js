@@ -81,34 +81,49 @@ function onPlayerStateChange(event) {
       }
 
 
+// Enable tootips via bootstrap
+$(function() {
+  $('[data-toggle="tooltip"]').tooltip();
+});
 
 // Slick Carousel Settings
- $('.gallery-responsive').slick({
-	  dots: false,
-    arrows: false,
-	  infinite: true,
-	  autoplaySpeed: 6000,
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  accessibility: true,
-	  autoplay: true,
-	  draggable: true,
-	  swipe: true,
-	  pauseOnFocus: true,
-   focusOnSelect: true,
-    asNavFor: '.gallery-responsive-nav'
-	});
+$('.gallery-responsive').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: true
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
 
-	$('.gallery-responsive-nav').slick({
-	  slidesToShow: 7,
-	  slidesToScroll: 1,
-	  asNavFor: '.gallery-responsive',
-	  dots: false,
-	  centerMode: false,
-	  focusOnSelect: true,
-	  pauseOnFocus: true,
-	  autoplay: false,
-	  asNavFor: '.gallery-responsive'
-	});
 
 });

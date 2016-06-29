@@ -10,7 +10,7 @@ module.exports = function(grunt) {
       },
       dist : {
         src: ['components/scripts/*.js'],
-        dest: 'builds/development/js/script.js'
+        dest: 'builds/development/js/home-script.js'
       }
     }, //concat
 
@@ -22,7 +22,7 @@ module.exports = function(grunt) {
         },
         files : [{
           src: 'components/scss/main.scss',
-          dest: 'builds/development/css/style.css'
+          dest: 'builds/development/css/home-style.css'
         }]
       },
       prod: {
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
 
     autoprefixer: {
       multiple_files: {
-        src: "builds/development/css/style.css"
+        src: "builds/development/css/home-style.css"
       }
     }, //autoprefixer
 
@@ -49,9 +49,9 @@ module.exports = function(grunt) {
       },
       theme: {
       files  : {
-        'builds/development/js/script.min.js': [
+        'builds/development/js/home-script.min.js': [
           // "components/scripts/_bower.js",            
-          'builds/development/js/script.js'           
+          'builds/development/js/home-script.js'           
         ]
       }
     }
@@ -82,7 +82,7 @@ module.exports = function(grunt) {
       },
       target: {
         files: {
-          'builds/development/css/style.min.css': ['builds/development/css/style.css']
+          'builds/development/css/home-style.min.css': ['builds/development/css/home-style.css']
         }
       }
     },
