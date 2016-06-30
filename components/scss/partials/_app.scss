@@ -1,296 +1,287 @@
-
-
-html { font-size: 62.5%; } 
-body { font-size: 10px; font-size: 1rem; } /* =14px */
-
-
-#main {
-  box-sizing: border-box;
-}
-#main * {
-  box-sizing: inherit;
-}
-
-div#main-wrap h1, h2, h3 {
-    font-weight: normal;
-}
- 
-
-.indent {
-    padding: 0 5%!important;
-}
-.not-mobile {
-  display: none;
-}
-
-@media screen and (min-width: 480px) {
-  .mobile {
-    display: none;
+  body {
+    margin: 0;
   }
-  .not-mobile {
+  #nav_contain::after {
+    content: '';
     display: block;
+    clear: both;
   }
-} 
 
-#main-wrap {
-  max-width: 960px;
-  margin: 0 auto;
-  clear: both;
-}
-
-#main-wrap {
-  h1 {
-    font-size: 1.7rem;
-    font-color: #414042;
+  #main {
+    padding: 0;
+    max-width: 960px;
+    margin: 1em auto 0;
+    box-sizing: border-box;
   }
-  p.hero {
-    font-size: 1.5rem;
+  #main section.home-section {
+    border-top: 2px solid #E4772F;
   }
-  h2 {
-    font-size: 1.7rem;
-    font-color: #414042;
+  #main h1, #main h2, #main h3, #main p {
+    margin-top: 0;
+    font-family: 'proxima-nova';
+    color: #414042;
+    font-weight: normal;
+    line-height: 1.4em;
   }
-  h3 {
-    font-size: 1.7rem;
-    font-color: #414042;
+  #main p {
+    line-height: 1.5em;
   }
-  p {
-    font-size: 1.4rem;
-    font-color: #414042;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  #main-wrap {
-    h1 {
-      font-size: 1.9rem;
-    }
-    p.hero {
-      font-size: 1.7rem;
-    }
-    h2 {
-      font-size: 1.9rem;
-    }
-    h3 {
-      font-size: 1.9rem;
-    }
-    p {
-      font-size: 1.5rem;
-    }
-  }
-}
-
-@media screen and (min-width: 720px) {
-  #main-wrap {
-    h1 {
-      font-size: 2.7rem;
-    }
-    p.hero {
-      font-size: 2rem;
-    }
-    h2 {
-      font-size: 2.3rem;
-    }
-    h3 {
-      font-size: 1.8rem;
-    }
-    p {
-      font-size: 1.6rem;
-    }
-  }
-}
-
-@media screen and (min-width: 960px) {
-  #main-wrap  {
-    h1 {
-      font-size: 2.7rem;
-    } 
-    p.hero {
-      font-size: 2rem;
-    }
-    h2 {
-      font-size: 2.3rem;
-    }
-    h3 {
-      font-size: 1.8rem;
-    }
-    p {
-      font-size: 1.6rem;
-    }
-  }
-}
-
-p.mobile {
-  padding: 5%;
-  margin-bottom: 0;
-}
-h2.mobile {
-  font-size: 1.7rem;
-  font-weight: normal;  
-}
-.text {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-section.home-section {
-  .section-inner {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    padding: 6% 5%;
-  }
-  h1,
-  h2,
-  h3,
-  p {
-    font-family: "proxima-nova";
-  }
-  position: relative;
-  border-top: 2px solid orange;
-  img {
-    width: 100%;
-  }
-  .text {
-    // position: absolute;
-    z-index: 9999999;
-    // max-width: 35%;
-    // top: 0;
-  }
-  .text.left {
-    float: left;
-  }
-  .text.right {
-    float: right;
-  }
-} 
-
-section#video {
-  // background-image: url('https://www.datamotion.com/wp-content/uploads/2016/06/DM-Tile-2.jpg');
-  // background-size: cover;
-  // height: 250px;
-  .video-container {
-    z-index: 99999999;
-  }
-  .container {
-    height: 100%;
-    .row {
-      height: 100%;
-      div {
-        height: 100%;
-      }
-    }
-  } 
-}
-
-section#lock {
-  background-image: url('https://www.datamotion.com/wp-content/uploads/2016/06/DM-Tile-4.jpg');
-  background-size: cover;
-}
-
-section#logo-success {
-  .slick-slider {
-    margin-bottom: 0px!important;
-  }
-  .flex-wrap {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-
-@media screen and (max-width: 480px) {
-  section#logo-success h2 {
-    font-size: 1.7rem;
-  }
-  section#logo-success .flex-wrap .gallery {
-    order: -1;
-  }
-  .slick-slide p {
+  #main .desk {
     display: none;
   }
-}
-
-.video-container {
-  width: 100%;
-}
-
-section#hero-2 {
-  background-image: url('https://www.datamotion.com/wp-content/uploads/2016/06/DM-Tile-5.jpg');
-  background-size: cover;
-}
-
-section#social {
-  background-image: url('https://www.datamotion.com/wp-content/uploads/2016/06/DM-Tile-6.jpg');
-  background-size: cover;
-}
-
-.slick-slide {
-  margin: 0 20px;
-  a:hover {
-    text-decoration: none;
+  #main .mobile {
+    margin: 0;
   }
-  img {
-    padding: 15px 0;
-    margin: 0 auto;
-    max-height: 140px;
-    border-bottom: 7px solid gray;
+  @media screen and (min-width: 461px) {
+    #main .mobile {
+      display: none;
+    }
+    #main .desk {
+      display: block;
+    }
+  }
+  #main div.mobile.hero {
+    background-color: #90979B;
+  }
+  #main div.mobile.video {
+    background-color: #D7D7D7;
+  }
+  #main div.mobile.lock {
+    background-color: #86A6BF;
+  }
+  #main div.mobile.cross {
+    background-color: #DAE1DA;
+  }
+  #main section.home-section {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    box-sizing: border-box;
+  }
+  #main section.home-section .hero h2 {
+    font-size: 27px;
+    font-weight: bold;
+  }
+  #main section.home-section .hero p {
+    font-size: 18px;
+  }
+  #main section.home-section h2 {
+    font-size: 23px;
+  }
+  #main section.home-section h3 {
+    font-size: 20px;
+  }
+  #main section.home-section p {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 840px) {
+    #main section.home-section .hero h2 {
+      font-size: 19px;
+    }
+    #main section.home-section .hero p {
+      font-size: 17px;
+    }
+    #main section.home-section h2 {
+      font-size: 19px;
+    }
+    #main section.home-section h3 {
+      font-size: 19px;
+    }
+    #main section.home-section p {
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 690px) {
+    #main section.home-section .hero h2 {
+      font-size: 17px;
+    }
+    #main section.home-section .hero p {
+      font-size: 15px;
+    }
+    #main section.home-section h2 {
+      font-size: 17px;
+    }
+    #main section.home-section h3 {
+      font-size: 17px;
+    }
+    #main section.home-section p {
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 620px) {
+    #main section.home-section {
+      /*       .hero h2 {font-size: 17px;}
+            .hero p {font-size: 15px;}
+            h2 {font-size: 17px;}
+            h3 {font-size: 17px;}
+            p {font-size: 14px;} */
+    }
+    #main section.home-section h2, #main section.home-section h3, #main section.home-section p {
+      font-size: 80%;
+    }
+  }
+  #main section.home-section aside {
+    position: absolute;
+    max-width: 32%;
+    top: 19%;
+  }
+  #main section.home-section aside.left {
+    left: 9%;
+  }
+  #main section.home-section aside.right {
+    right: 9%;
+  }
+  #main section.home-section aside.hero {
+    max-width: 44%;
+  }
+  #main section#hero {
+    background-image: url("https://www.datamotion.com/wp-content/uploads/2016/06/DM-Tile-1.jpg");
+  }
+  #main section#video {
+    background-image: url("https://www.datamotion.com/wp-content/uploads/2016/06/DM-Tile-2.jpg");
+  }
+  #main section#video .video-container {
+    width: 45%;
+    height: 57.5%;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+
+  @media screen and (max-width: 460px) {
+    #main section#video .video-container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  #main section#lock {
+    background-image: url("https://www.datamotion.com/wp-content/uploads/2016/06/DM-Tile-4.jpg");
+  }
+  #main section#cross {
+    background-image: url("https://www.datamotion.com/wp-content/uploads/2016/06/DM-Tile-5.jpg");
+  }
+  #main div.mobile {
+    padding: 1.4em .75em;
+  }
+  #main div.mobile h2 {
+    font-size: 17px;
+  }
+  #main div.mobile p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.5em;
+  } 
+
+  @media screen and (max-width: 460px) {
+    #main section#video .video-container {
+      box-shadow: none;
+    }
+    #main section#cross aside {
+      top: 65%;
+    }
+    #main section.home-section aside {
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+    }
+    #main section.home-section aside h2 {
+      font-size: 17px;
+    }
+    #main section.home-section aside.left {
+      max-width: 50%;
+      left: 0;
+      padding: 0 .75em;
+    }
+    #main section.home-section aside.right {
+      max-width: 50%;
+      right: 0;
+      padding: 0 .75em;
+    }
+  }
+
+
+  .slides li img {
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
   }
-  p {
-    margin-top: 10px;
-    text-align: center;
-    text-decoration: none;
-    visibility: hidden;
-  }
-}  
 
-.slick-slide:hover,
-.slick-slide:active {
-  img {
-    border-bottom: 7px solid purple;
+  .slides li img:hover,
+  .slides li img:active {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
   }
-  p {
-    visibility: visible;
+
+
+
+  #main .menu-info-buttons-2-container {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    max-width: 82%;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+
   }
-} 
-.blue {
-  background-color: #86A6BF;
-}
-.ltgray {
-  background-color: #D7D7D7;
-}
-.dkgray {
-  background-color: #90979B;
-}
-.mdgray {
-  background-color: #DAE1DA;
-}
 
-body {
-  padding-top: 70px;
-  /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-}
-
-.portfolio-item {
-  margin-bottom: 25px;
-}
-
-footer {
-  margin: 50px 0;
-}
-
-.flex-wrap.logos-wrap {
-  display: flex;
-  justify-content: space-between;
-  .case-logo {
-    width: 19%;
+  #main .section_menu_contain {
+    position: absolute;
+    bottom: 18%;
+    width: 100%;
   }
+
+  .new-button a {
+    padding: .6em 1.2em;
+    border: 2px solid #465259;
+    background-color: #fff;
+    border-radius: 7px;
+    color: #465259;
+    font-family: 'proxima-nova';
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+  }
+  .button-wrap.lock {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    /* max-width: 30%; */
 }
+
+  .new-button {
+      display: flex;
+      margin-top: 1em;
+  }
+   @media screen and (max-width: 690px) {
+    .new-button a {
+      padding: 0.3em 1em;
+      font-size: .7rem;
+
+    }
+  }
+  section#logos {
+    /* height: 100%; */
+    display: flex;
+    border-top: 2px solid #e4772f;
+  }
+
+  .three_column.customer_slider_container {
+      border-bottom: none;
+      border-top: none;
+      padding: 0;
+  }
+
+  .logo-slider-wrap {
+      padding: 3em 6em;
+  }
