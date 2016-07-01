@@ -111,10 +111,10 @@
   </div>
   <section id="social" class="home-section nav-section">
     <aside class="left">
-      <h3>Stay up to date with us...</h2>
+      <h3>Stay up to date with us...</h3>
     </aside>
     <div class="section_menu_contain">
-      <?php wp_nav_menu(array('items_wrap' => '%3$s','menu_class' => 'new-button', 'theme_location' => 'cta-menu')); ?>
+      Menu here
     </div>
     <!-- Put Social Icons HERE -->
   </section>

@@ -46,7 +46,7 @@
 
 
 
-jQuery( window ).load(function($) { 
+/*jQuery( window ).load(function($) { 
 // jQuery(document).ready(function($) {
 
   var wide = ($("#main").width());
@@ -57,7 +57,7 @@ jQuery( window ).load(function($) {
     $(".home-section").height(wide * .44);
   });
 
-}); 
+}); */
 // Enable tootips via bootstrap
   /*$(function() {
     $('[data-toggle="tooltip"]').tooltip();

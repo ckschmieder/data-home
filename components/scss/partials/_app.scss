@@ -14,8 +14,7 @@
     box-sizing: border-box;
   
     section.home-section {
-      // border-top: 2px solid #E4772F;
-      border-top: 2px solid green;
+      
     }
     h1, h2, h3, p {
       margin-top: 0;
@@ -44,7 +43,6 @@
       display: block;
     }
   }
-
   #main div.mobile.hero {
     background-color: #90979B;
   }
@@ -59,6 +57,10 @@
   }
   #main section.home-section {
     width: 100%;
+    height: 44vw;
+    max-height: 422px!important;
+    // border-top: 2px solid #E4772F;
+      border-top: 2px solid green;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
