@@ -19,6 +19,7 @@
   <div class="mobile hero">
     <p>Send secure, compliant messages, email and files anywhere, to anywhere.</p>
   </div>
+  <?php wp_nav_menu(array('items_wrap' => '%3$s','menu_class' => 'new-button', 'theme_location' => 'info-new')); ?>
   <section id="logos" class="home-section-slider">
   <div class="logo-slider-wrap">  
     <?php
@@ -108,8 +109,17 @@
   <div class="mobile cross">
     <p>Streamline communications and accelerate positive outcomes while raising your security & compliance profile.</p>
   </div>
+  <section id="social" class="home-section nav-section">
+    <aside class="left">
+      <h3>Stay up to date with us...</h2>
+    </aside>
+    <div class="section_menu_contain">
+      <?php wp_nav_menu(array('items_wrap' => '%3$s','menu_class' => 'new-button', 'theme_location' => 'cta-menu')); ?>
+    </div>
+    <!-- Put Social Icons HERE -->
+  </section>
 </div><!-- END #main -->
 
 
 
-<?php get_footer(); ?>
+<?php get_footer('home'); ?>

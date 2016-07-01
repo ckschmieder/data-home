@@ -11,6 +11,7 @@ function register_my_menus() {
 		  'info-new' => 'Info Buttons New',
 		  'slider-links' => 'Slider Links',
 		  'footer-links' => 'Footer Links',
+		  'cta-menu' => 'CTA Menu',
 	  )
   );
 }

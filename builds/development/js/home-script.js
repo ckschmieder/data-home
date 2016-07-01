@@ -47,14 +47,17 @@
     player.stopVideo();
   }
 
-jQuery(document).ready(function () {
 
-  var wide = (jQuery("#main").width());
+
+jQuery( window ).load(function($) { 
+// jQuery(document).ready(function($) {
+
+  var wide = ($("#main").width());
   jQuery(".home-section").height(wide * .44);
 
   jQuery(window).resize(function() {
-    var wide = (jQuery("#main").width());
-    jQuery(".home-section").height(wide * .44);
+    var wide = ($("#main").width());
+    $(".home-section").height(wide * .44);
   });
 
 }); 
