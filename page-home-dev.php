@@ -6,9 +6,8 @@
 
 <?php get_header(); ?>
 
-
 <div id="main">
-  <section id="hero" class="home-section">
+  <section id="hero" class="home-section nav-section">
     <aside class="left hero">
       <h2>Protect your data -</br>and your reputation</h2>
       <p class="desk">Send secure, compliant messages, email and files anywhere, to anywhere.</p>
@@ -97,11 +96,14 @@
   <div class="mobile lock">
     <p>Power your communication work flows & apps using our complete set of standard connectors, SDKs & APIs.</p>
   </div>
-  <section id="cross" class="home-section">
+  <section id="cross" class="home-section nav-section">
     <aside class="left">
       <h2>Security & compliance shouldn't slow you down</h2>
       <p class="desk">Streamline communications and accelerate positive outcomes while raising your security & compliance profile.</p>
     </aside>
+    <div class="section_menu_contain">
+      <?php wp_nav_menu(array('items_wrap' => '%3$s','menu_class' => 'new-button', 'theme_location' => 'info-new')); ?>
+    </div>
   </section>
   <div class="mobile cross">
     <p>Streamline communications and accelerate positive outcomes while raising your security & compliance profile.</p>

@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         banner: '\n\n//------------------------------------------\n'
       },
       dist : {
-        src: ['components/scripts/*.js'],
+        src: ['components/scripts/script.js'], // replace script with * to undo
         dest: 'builds/development/js/home-script.js'
       }
     }, //concat
@@ -110,6 +110,6 @@ module.exports = function(grunt) {
   // grunt.loadNpmTasks('grunt-bower-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask('default', ['concat', 'uglify', 'sass:dist', 'autoprefixer', 'cssmin', 'watch' ]);
+  grunt.registerTask('default', ['concat', 'sass:dist', 'autoprefixer', 'cssmin', 'watch' ]);
 
 }; //wrapper function
